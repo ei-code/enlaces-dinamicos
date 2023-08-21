@@ -56,7 +56,7 @@ const NavigationComponent = props => {
       </div>
 
       <div className="right-side">
-        AUTENTICACIÓN Y ENLACES DINÁMICOS
+        Autenticación y enlaces dinámicos
         {props.loggedInStatus === "LOGGED_IN" ? (
           <a onClick={handleSignOut}>Sign Out</a>
         ) : null}
