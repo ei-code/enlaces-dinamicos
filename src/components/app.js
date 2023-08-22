@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+
 import { Home } from "./pages/home";
 import { Contact } from "./pages/contact";
 import { Admin } from "./pages/admin";
@@ -8,7 +13,7 @@ import NoMatch from "./pages/no-match";
 import Auth from "./pages/auth";
 import NavigationComponent from "./navigation-container";
 
-
+library.add (faSignOutAlt);
 export default class App extends Component {
   constructor(props) {
     super(props);
